@@ -24,7 +24,7 @@ int main()
 
 	fileOut << "\n";
 
-
+	fileOut.close();
 }
 
 void generator(vector<char> &c)
