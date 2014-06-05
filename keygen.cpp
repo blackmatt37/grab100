@@ -17,9 +17,9 @@ int main()
 
 	generator(key);
 
-	for(int j = 0; j < key.size(); j++)
+	for(int i = 0; i < key.size(); i++)
 	{
-		fileOut << key[j];
+		fileOut << key[i];
 	}
 
 	fileOut << "\n";
@@ -29,13 +29,13 @@ int main()
 
 void generator(vector<char> &c)
 {
-	int i = 0;
+	int count = 0;
 	string alpha = "1234567890abcdefghijklmnopqrstuvwxyz";
 
-	while(i < 40)
+	while(count < 40)
 	{
 		c.push_back(alpha[rand() % alpha.size()]);
 
-		i++;
+		count++;
 	}
 }
